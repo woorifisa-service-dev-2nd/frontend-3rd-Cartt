@@ -1,7 +1,4 @@
 import React, { useContext } from 'react'
-import ProductName from './ProductName'
-import ProductImage from './ProductImage'
-import ProductCount from './ProductCount'
 import { ScreenContext, ScreenDispatchContext } from '../../context/ScreenContext'
 import IconButton from '../../ui/IconButton'
 
