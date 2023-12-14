@@ -9,9 +9,9 @@
 
 ## 팀원
 
-|               [박치원](https://github.com/chich2)               |              [우지음](https://github.com/oozeume)               |             [윤이솔](https://github.com/pinus0711)              |             [이건중](https://github.com/JohnDohnut)             |              [이규리](https://github.com/KyuliLee)               |              [임다빈](https://github.com/ekqls5858)              |
-| :-------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-| ![박치원](https://avatars.githubusercontent.com/u/59588641?v=4) | ![우지음](https://avatars.githubusercontent.com/u/77391482?v=4) | ![윤이솔](https://avatars.githubusercontent.com/u/62708247?v=4) | ![이건중](https://avatars.githubusercontent.com/u/51821505?v=4) | ![이규리](https://avatars.githubusercontent.com/u/151590254?v=4) | ![임다빈](https://avatars.githubusercontent.com/u/151507968?v=4) |
+|               [박치원](https://github.com/chich2)               |              [조유정](https://github.com/oozeume)               |             [윤이솔](https://github.com/pinus0711)              |
+| :-------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: |
+| ![박치원](https://avatars.githubusercontent.com/u/59588641?v=4) | ![조유정](https://avatars.githubusercontent.com/u/77391482?v=4) | ![윤이솔](https://avatars.githubusercontent.com/u/62708247?v=4) |
 
 ## 핵심 기능
 
