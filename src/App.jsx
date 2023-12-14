@@ -5,6 +5,7 @@ import CartContainer from '@/components/carts/CartContainer'
 import { CartContext, CartDispatchContext } from './contexts/CartContext';
 import { reducer } from "@/contexts/Reducer.jsx";
 
+console.log(data);
 
 function App() {
     const [items, dispatch] = useReducer(reducer, data);
