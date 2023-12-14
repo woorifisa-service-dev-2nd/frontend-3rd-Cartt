@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react'
 import IconButton from '../ui/buttons/IconButton';
-import { CartDispatchContext } from '../../contexts/CartContext';
 import incIcon from "@/assets/image/icon-up.png";
 import decIcon from "@/assets/image/icon-down.png";
+import { ScreenDispatchContext } from '@/component/context/ScreenContext.jsx'
 
 const CartItem = ({ item }) => {
     console.log(item);
@@ -10,7 +10,8 @@ const CartItem = ({ item }) => {
     // const incIcon1 = incIcon;
     // const decIcon1 = decIcon;
 
-    const dispatch = useContext(CartDispatchContext);
+    const dispatch = useContext(ScreenDispatchContext)[0];
+    console.log(dispatch);
 
     const increaseHandler = () => {
 
@@ -30,7 +31,7 @@ const CartItem = ({ item }) => {
             </div>
             <div>
                 <div>
-                    <p>{item.title}</p>
+                    <p>{item.name}</p>
                     <p>{item.price.toLocaleString()}\</p>
                 </div>
             </div>

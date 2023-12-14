@@ -1,41 +1,43 @@
 import { useState, useReducer } from 'react'
-import { Route, Routes, useNavigate} from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import DefaultLayout from './layouts/DefaultLayout'
-import { data } from '@/defaultitem/data'
-
-import { CartContext, CartDispatchContext } from './contexts/CartContext';
-import { reducer } from "@/contexts/Reducer.jsx";
+import { data } from '@/constant/data'
+import { ScreenContext, ScreenDispatchContext } from '@/component/context/ScreenContext.jsx'
+import { reducer, reducerForSlider, reducerAmount } from '@/component/context/Reducer.jsx'
 import Home from './pages/Home'
 import Cart from './pages/Cart';
 
-console.log(data);
 
 function App() {
+
+    const [viewItem, sliderDispatch] = useReducer(reducerForSlider, data[0]);
     const [items, dispatch] = useReducer(reducer, data);
+    const [amount, amountDispatch] = useReducer(reducerAmount, data[0]);
+
     const navigate = useNavigate();
 
     const goHome = () => {
-      navigate('/');
+        navigate('/');
     }
     const goCart = () => {
-      navigate('/cart');
+        navigate('/cart');
     }
 
     return (
-      <>
+        <>
 
-       <DefaultLayout>
+            <DefaultLayout>
 
-        <CartContext.Provider value={items}>
-            <CartDispatchContext.Provider value={dispatch}>
-            <Routes>
-              <Route path="/" element={<Home onClick={goCart}/>}/>
-              <Route path="/cart" element={<Cart onClick={goHome}/>} />
-            </Routes>
-            </CartDispatchContext.Provider>
-        </CartContext.Provider>
+                <ScreenContext.Provider value={[items, viewItem, amount]}>
+                    <ScreenDispatchContext.Provider value={[dispatch, sliderDispatch, amountDispatch]}>
+                        <Routes>
+                            <Route path="/" element={<Home onClick={goCart} />} />
+                            <Route path="/cart" element={<Cart onClick={goHome} />} />
+                        </Routes>
+                    </ScreenDispatchContext.Provider>
+                </ScreenContext.Provider>
 
-    </DefaultLayout>
+            </DefaultLayout>
 
 
         </>

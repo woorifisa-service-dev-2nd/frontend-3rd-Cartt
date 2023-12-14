@@ -1,11 +1,11 @@
 import React, {useContext} from 'react'
 import CartItem from './CartItem'
 import CartFooter from './CartFooter';
-import { CartContext } from '../../contexts/CartContext';
+import { ScreenContext } from '@/component/context/ScreenContext.jsx'
 
 const CartContainer = () => {
 
-    const items = useContext(CartContext);
+    const items = useContext(ScreenContext)[0];
     console.log(items);
 
     return (

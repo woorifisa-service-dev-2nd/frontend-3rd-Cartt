@@ -1,18 +1,20 @@
 import React from 'react'
 import CartContainer from '@/components/carts/CartContainer'
-import DefaultLayout from '../layouts/DefaultLayout'
-import { CartContext,CartDispatchContext } from '../contexts/CartContext'
-
+import { ScreenContext } from '@/component/context/ScreenContext.jsx'
 
 const Cart = () => {
-  return (
-    <>
-        <h1 className='text-6xl'>Your Bag</h1>
-        <CartContainer />
-    
-    </>
 
-  )
+    // const items = useContext(ScreenContext);
+    // console.log(items);
+
+    return (
+        <>
+            <h1 className='text-6xl'>Your Bag</h1>
+            <CartContainer />
+
+        </>
+
+    )
 }
 
 export default Cart
