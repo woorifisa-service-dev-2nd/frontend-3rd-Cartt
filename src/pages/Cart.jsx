@@ -1,6 +1,5 @@
 import React from 'react'
 import CartContainer from '@/components/carts/CartContainer'
-import { ScreenContext } from '@/component/context/ScreenContext.jsx'
 
 const Cart = () => {
 

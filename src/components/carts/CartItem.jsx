@@ -5,22 +5,23 @@ import decIcon from "@/assets/image/icon-down.png";
 import { ScreenDispatchContext } from '@/component/context/ScreenContext.jsx'
 
 const CartItem = ({ item }) => {
-    console.log(item);
+    console.log(item.id);
 
+    const id = item.id;
     // const incIcon1 = incIcon;
     // const decIcon1 = decIcon;
 
     const dispatch = useContext(ScreenDispatchContext)[0];
-    console.log(dispatch);
+    // console.log(dispatch);
 
     const increaseHandler = () => {
 
-        dispatch({ type: 'inc', item})
+        dispatch({ type: 'inc', id})
     }
 
     const decreaseHandler = () => {
 
-        dispatch({ type: 'dec', item})
+        dispatch({ type: 'dec', id})
     }
 
 

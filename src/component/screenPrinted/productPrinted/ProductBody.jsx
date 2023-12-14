@@ -15,8 +15,9 @@ const ProductBody = () => {
       <h1>{items[id-1].name}</h1>
       <img src={items[id-1].img} alt={items[id-1].name} />
       <h2>{items[id-1].price}</h2>
-      <IconButton icon={'+'} onclick={()=>amountDispatch( {type: 'inc', viewItem} )}/>
-      <IconButton icon={'-'} onclick={()=>amountDispatch( {type: 'dec', viewItem} )} />
+      <IconButton icon={'+'} onclick={()=>dispatch( {type: 'inc', id} )}/>
+      {items[id-1].amount}
+      <IconButton icon={'-'} onclick={()=>dispatch( {type: 'dec', id} )} />
     </div>
   )
 }
