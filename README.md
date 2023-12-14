@@ -9,9 +9,9 @@
 
 ## 팀원
 
-|               [박치원](https://github.com/chich2)               |              [조유정](https://github.com/oozeume)               |             [윤이솔](https://github.com/pinus0711)              |
+|               [박치원](https://github.com/chich2)               |              [조유정](https://github.com/hellena345)               |             [송원섭](https://github.com/sws6641)              |
 | :-------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: |
-| ![박치원](https://avatars.githubusercontent.com/u/59588641?v=4) | ![조유정](https://avatars.githubusercontent.com/u/77391482?v=4) | ![윤이솔](https://avatars.githubusercontent.com/u/62708247?v=4) |
+| ![박치원](https://avatars.githubusercontent.com/u/59588641?s=400&v=4) | ![조유정](https://avatars.githubusercontent.com/u/151507047?v=4) | ![송원섭](https://avatars.githubusercontent.com/u/43631736?v=4) |
 
 ## 핵심 기능
 
