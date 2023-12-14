@@ -1,34 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, {useReducer, useState} from 'react'
+import ScreenHeader from './component/screenPrinted/ScreenHeader'
+import ScreenBody from './component/screenPrinted/ScreenBody'
+import ScreenResult from './component/screenPrinted/ScreenResult'
+import {data} from '@/constant/data'
+import {ScreenContext, ScreenDispatchContext} from '@/component/context/ScreenContext.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
+const reducer = () => {
+
+}
+// const [state, change] = useState(0);
+
+const reducerForSlider = (viewItem, action) => {
+
+
+  switch (action.type) {
+    case 'right':
+      if(viewItem.id === 3){
+        return {
+          ...viewItem,
+          id: 1
+        }
+      }
+      else{
+        return {
+        ...viewItem,
+          id: viewItem.id + 1
+        }
+      }
+
+    case 'left':
+      if(viewItem.id === 1){
+        return {
+          ...viewItem,
+          id: 3
+        }
+      }
+      else{
+        return {
+        ...viewItem,
+          id: viewItem.id - 1
+        }
+      }
+    // default:
+    //   return viewItem
+    }
+}
+
+const reducerAmount = (viewItem, action) => {
+  console.log(viewItem);
+  console.log(action);
+}
+
+
+const App = () => {
+
+  const [viewItem, sliderDispatch] = React.useReducer(reducerForSlider, data[0]);
+  const [items, dispatch] = React.useReducer(reducer, data);
+  const [amount, amountDispatch] = React.useReducer(reducerAmount, data[0]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <ScreenHeader />
+      <ScreenContext.Provider  value={[items, viewItem, amount]}>
+        <ScreenDispatchContext.Provider value={[dispatch, sliderDispatch, amountDispatch]}>
+          <ScreenBody />
+          <ScreenResult />
+        </ScreenDispatchContext.Provider>
+      </ScreenContext.Provider>
+
+    </div>
   )
 }
 
