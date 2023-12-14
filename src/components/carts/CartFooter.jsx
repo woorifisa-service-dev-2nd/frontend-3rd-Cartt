@@ -7,9 +7,12 @@ const CartFooter = () => {
 
     let sum = 0;
 
-    items.map( (item) => {
-        sum += Number(item.price) * Number(item.amount);
-    });
+    if(items){
+        items.map( (item) => {
+            sum += Number(item.price) * Number(item.amount);
+        });
+    }
+
 
     const payHandler = () => {
         alert('결제가 완료 되었습니다!');
