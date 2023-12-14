@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link} from "react-router-dom";
+import Button from '@mui/material/Button';
 
 const Home = ({onClick}) => {
 
@@ -9,7 +9,9 @@ const Home = ({onClick}) => {
 
     <div>
         <div>Home</div>
-        <button type="button" onClick={onClick}>Cart</button>
+       
+        <Button variant="contained" color="success" onClick={onClick} >ADD TO CART</Button>
+       
     </div>
     
 
