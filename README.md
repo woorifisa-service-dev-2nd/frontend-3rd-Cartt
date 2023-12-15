@@ -28,6 +28,7 @@
 <br/>
 
 ### 해당 제품의 수량 증가, 감소 버튼 클릭으로 수량 변경
+![inc dec](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/448af1e6-83ba-48d9-80b4-bfb041d89da7)
 
 구매할 상품을 추가/제거 할 수 있습니다.
 <br/>
