@@ -1,6 +1,6 @@
 import React from 'react'
 import IconButton from '../ui/IconButton'
-import { AppBar, Toolbar, Typography,Button } from '@mui/material';
+import { AppBar, Toolbar, Typography,Button, Box } from '@mui/material';
 const ScreenHeader = ({onClick}) => {
   return (
     <div className='flex'>
@@ -13,7 +13,14 @@ const ScreenHeader = ({onClick}) => {
                         {/* <Button variant="contained" color="success" onClick={onClick} >GO TO CART</Button> */}
                 </Toolbar>
             </AppBar>
-        <h1>'Get Anything, it's all for your health'</h1>
+            <Box textAlign='center' >
+              <Typography variant="h3"  noWrap>
+           
+            Get Anything, it's all for your health
+            </Typography>
+            </Box>
+            
+        {/* <h1>'Get Anything, it's all for your health'</h1> */}
         
     </div>
   )

@@ -13,7 +13,7 @@ const Cart = () => {
                         <Typography variant="h6"  noWrap>
                             Your Bag
                         </Typography>
-                        {/* <Button variant="contained" color="success" onClick={onClick} >GO TO CART</Button> */}
+                        
                 </Toolbar>
             </AppBar>
             <CartContainer />
