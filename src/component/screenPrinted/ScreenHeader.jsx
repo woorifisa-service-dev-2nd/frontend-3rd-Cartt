@@ -14,7 +14,7 @@ const ScreenHeader = ({onClick}) => {
                 </Toolbar>
             </AppBar>
         <h1>'Get Anything, it's all for your health'</h1>
-        <IconButton icon={':선물:'} />
+        
     </div>
   )
 }

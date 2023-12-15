@@ -9,9 +9,10 @@ const Home = ({ onClick }) => {
     return (
         <div>
             <ScreenHeader />
-            <Button variant="contained" color="success" onClick={onClick} >ADD TO CART</Button>
+            
             <ScreenBody />
             <ScreenResult />
+            <Button variant="contained" color="success" onClick={onClick} >GO TO CART</Button>
 
         </div>
     )
