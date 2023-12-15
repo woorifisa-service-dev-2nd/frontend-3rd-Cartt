@@ -17,7 +17,6 @@
 
 ## 핵심 기능
 <br/>
-
 ## 1. 슬라이드 방식으로 좌, 우 화살표를 클릭해 "제품 전환" 기능
 ![slide](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/38629336-c3df-4af1-9b15-88562de47dbb)
 #### 슬라이드 전환 구현 수업에서 배열로된 이미지를 불러오는 것과는 다르게, 컴포넌트로 구성된 객체의 내용들이 변경되도록 구현해보았습니다.
@@ -37,20 +36,17 @@
 ![cart action](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/715760d5-6b78-47b8-b03d-cd1eadf4518f)
 
 #### 장바구니 아이콘을 클릭하면, 페이지 이동 처리 기능을 통해 연결된 페이지를 사용자에게 렌더링 해줍니다.
-### 활용 개념: React Router
+### => 활용 개념: React Router
 
 <br/><br/>
 
-## 4. 장바구니 페이지에서, 구매하려 담은 제품들 수량 조절 기능 및 결제 버튼 누르면 결제 표시창 띄워주는 기능
+## 4. 장바구니 페이지에서, 구매하려 담은 제품들 수량 조절 기능 및 합산 금액 출력, 결제 버튼 누르면 결제 표시창 띄워주는 기능
+![do sth in cart](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/27f78555-46be-4989-bb98-27677b5378c9)
 
+#### 장바구니 페이지에서 수량 조절 시, 위와 동일하게, 상품 JSON 파일의 'amout' key값을 가진 데이터의 value값을 새로운 값으로 업데이트하고 불러와 렌더링 하는 방식으로 진행하였습니다.
+### => 활용개념 : Context API 및 useReducer
 
-
-- 구매를 위해 선택한 제품들을 장바구니에서 확인 및 수량 변경 가능
-- 장바구니 페이지에서, 전체 금액 합산 출력
-
-
-## 도메인 용어 정의
-
+<br/><br/>
 
 ## 비효율적이었거나 어려웠던점
 - 여러 Context 정의 후 다수의 value 값을 하위 컴포넌트 범위에 적용할 때, 배열 형태로 넘겨주면 되는 것을 몰라 어려움을 잠시 겪었습니다.
