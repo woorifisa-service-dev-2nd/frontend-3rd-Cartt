@@ -14,7 +14,7 @@
 # 🌈 활용 기술
 
 ## `react`, `HTML`, `JS`
-## `radix-ui`, `React-router-dom`
+## `MUI`, `React-router-dom`
 
 <br/> <br/><br/>
 
