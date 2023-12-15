@@ -49,8 +49,11 @@
 <br/><br/>
 
 ## 비효율적이었거나 어려웠던점
-- 여러 Context 정의 후 다수의 value 값을 하위 컴포넌트 범위에 적용할 때, 배열 형태로 넘겨주면 되는 것을 몰라 어려움을 잠시 겪었습니다.
-- id값만 넘겨주어 활용하면 간단하게 
+### - 여러 Context 정의 후 다수의 value 값을 하위 컴포넌트 범위에 적용할 때, 배열 형태로 넘겨주면 되는 것을 몰라 어려움을 잠시 겪었습니다.
+![ProductBody jsx - frontend-3rd-Cartt-wonseop - Visual Studio Code 2023-12-15 오전 11_30_17](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/7b2f7327-f859-4b2f-a421-5374ed0977b0)
+
+
+### - id값만 넘겨주어 활용하면 간단하게 
 
 
 ## 느낀점
