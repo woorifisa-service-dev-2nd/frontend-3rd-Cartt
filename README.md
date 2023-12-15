@@ -58,7 +58,7 @@
 
 <br/>
 
-### 2. id값만 넘겨주어 활용하면 간단할 수 있는 코드를, 데이터 전체 JSON 파일을 넘겼던 점
+### 2. 전체 JSON 파일을 넘겨서 ID 값을 활용했는데, JSON의 다른 값들은 필요가 없었기 때문에 ID만 넘겨주어도 됐었습니다.
 ![had to send id](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/6b343a7c-3591-4361-bd81-b004115897bf)
 
 <br/>
