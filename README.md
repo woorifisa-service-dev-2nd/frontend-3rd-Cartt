@@ -31,7 +31,7 @@
 ![slide](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/4b2f4f80-9cfb-4bd3-b685-340be5312a01)
 
 ### 슬라이드 전환 구현 수업에서 배열로된 이미지를 불러오는 것과는 다르게, <br/> 컴포넌트로 구성된 객체의 내용들이 변경되도록 구현해보았습니다.
-### => 활용 개념: Context API 및 useReducer
+### 🔍 활용 개념: Context API 및 useReducer
 
 
 <br/><br/>
@@ -40,7 +40,7 @@
 ![inc dec](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/448af1e6-83ba-48d9-80b4-bfb041d89da7)
 
 ### 구매할 상품을 추가/제거 할 수 있습니다. <br/> 추가 제거 버튼을 누르면, 상품 JSON 파일의 'amout' key값을 가진 데이터의 value값을 <br/> 새로운 값으로 업데이트하고 업데이트된 값을 불러와 렌더링되도록 진행하였습니다. <br/> (해당되는 데이터 하나의 값만 변경하는 것이 아닌, <br/> 전체 데이터 배열을 수정한 새로운 데이터 배열로 변경하는 방식)
-### => 활용 개념: Context API 및 useReducer
+### 🔍 활용 개념: Context API 및 useReducer
 
 <br/><br/>
 
@@ -48,7 +48,7 @@
 ![cart action](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/715760d5-6b78-47b8-b03d-cd1eadf4518f)
 
 ### 장바구니 아이콘을 클릭하면, 페이지 이동 처리 기능을 통해 연결된 페이지를 사용자에게 렌더링 해줍니다.
-### => 활용 개념: React Router
+### 🔍 활용 개념: React Router
 
 <br/><br/>
 
@@ -56,7 +56,7 @@
 ![do sth in cart](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/27f78555-46be-4989-bb98-27677b5378c9)
 
 ### 장바구니 페이지에서 수량 조절 시, 위와 동일하게, 상품 JSON 파일의 'amout' key값을 가진 데이터의 value값을 새로운 값으로 업데이트하고 불러와 렌더링 하는 방식으로 진행하였습니다.
-### => 활용개념 : Context API 및 useReducer
+### 🔍 활용개념 : Context API 및 useReducer
 
 <br/><br/>
 
