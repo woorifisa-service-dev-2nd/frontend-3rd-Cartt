@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import CartItem from './CartItem'
 import CartFooter from './CartFooter';
 import { ScreenContext } from '@/component/context/ScreenContext.jsx'
+import { Grid } from '@mui/material';
 
 const CartContainer = () => {
 
@@ -10,7 +11,11 @@ const CartContainer = () => {
 
     return (
         <>
-            <ul className=''>
+        <Grid container direction="row-reverse" justifyContent="center">
+           <Grid  container xs={12}   
+                direction="row-reverse"
+                justifyContent="center"
+                alignItems="center" >
                 {
                     items.map((item) => {
                         if(item.amount > 0){ // 수량이 1개 이상인 경우만 
@@ -18,8 +23,11 @@ const CartContainer = () => {
                         }
                     })
                 }
-            </ul>
+            
+            </Grid>
             <CartFooter/>
+        </Grid>
+            
         </>
     )
 }

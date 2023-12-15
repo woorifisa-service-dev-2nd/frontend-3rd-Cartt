@@ -29,10 +29,7 @@ const CartItem = ({ item }) => {
 
 
     return (
-        <Grid container xs={12}   
-        direction="row-reverse"
-        justifyContent="center"
-        alignItems="center" >
+        
             <Card
             variant="outlined"
             orientation="horizontal"
@@ -61,7 +58,7 @@ const CartItem = ({ item }) => {
       </CardContent>
     </Card>
 
-        </Grid>
+      
     )
 }
 
