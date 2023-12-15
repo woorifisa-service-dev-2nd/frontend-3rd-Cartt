@@ -30,7 +30,7 @@
 # 1. 슬라이드 방식으로 좌, 우 화살표를 클릭해 "제품 전환" 기능
 ![slide](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/4b2f4f80-9cfb-4bd3-b685-340be5312a01)
 
-### 슬라이드 전환 구현 수업에서 배열로된 이미지를 불러오는 것과는 다르게, 컴포넌트로 구성된 객체의 내용들이 변경되도록 구현해보았습니다.
+### 슬라이드 전환 구현 수업에서 배열로된 이미지를 불러오는 것과는 다르게, <br/> 컴포넌트로 구성된 객체의 내용들이 변경되도록 구현해보았습니다.
 ### => 활용 개념: Context API 및 useReducer
 
 
@@ -39,7 +39,7 @@
 # 2. 해당 제품의 "수량 증가, 감소" 버튼 클릭으로 수량 변경 기능
 ![inc dec](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/448af1e6-83ba-48d9-80b4-bfb041d89da7)
 
-### 구매할 상품을 추가/제거 할 수 있습니다. <br/> 추가 제거 버튼을 누르면, 상품 JSON 파일의 'amout' key값을 가진 데이터의 value값을 새로운 값으로 업데이트하고 <br/> 업데이트된 값을 불러와 렌더링되도록 진행하였습니다. <br/> (해당되는 데이터 하나의 값만 변경하는 것이 아닌, 전체 데이터 배열을 수정한 새로운 데이터 배열로 변경하는 방식)
+### 구매할 상품을 추가/제거 할 수 있습니다. <br/> 추가 제거 버튼을 누르면, 상품 JSON 파일의 'amout' key값을 가진 데이터의 value값을 <br/> 새로운 값으로 업데이트하고 업데이트된 값을 불러와 렌더링되도록 진행하였습니다. <br/> (해당되는 데이터 하나의 값만 변경하는 것이 아닌, <br/> 전체 데이터 배열을 수정한 새로운 데이터 배열로 변경하는 방식)
 ### => 활용 개념: Context API 및 useReducer
 
 <br/><br/>
@@ -52,7 +52,7 @@
 
 <br/><br/>
 
-# 4. 장바구니 페이지에서, 구매하려 담은 제품들 수량 조절 기능 및 합산 금액 출력, <br/>결제 버튼 누르면 결제 표시창 띄워주는 기능
+# 4. 장바구니 페이지에서, 구매하려 담은 제품들 수량 조절 기능 <br/> 및 합산 금액 출력, 결제 버튼 누르면 결제 표시창 띄워주는 기능
 ![do sth in cart](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/27f78555-46be-4989-bb98-27677b5378c9)
 
 ### 장바구니 페이지에서 수량 조절 시, 위와 동일하게, 상품 JSON 파일의 'amout' key값을 가진 데이터의 value값을 새로운 값으로 업데이트하고 불러와 렌더링 하는 방식으로 진행하였습니다.
@@ -61,17 +61,17 @@
 <br/><br/>
 
 # ⚠️ 비효율적이었거나 어려웠던점
-## 1. 여러 Context 정의 후 다수의 value 값을 하위 컴포넌트 범위에 적용할 때, 배열 형태로 넘겨주면 되는 것을 몰라 어려움을 잠시 겪었습니다.
+## 1. 여러 Context 정의 후 다수의 value 값을 하위 컴포넌트 범위에 적용할 때, <br/> 배열 형태로 넘겨주면 되는 것을 몰라 어려움을 잠시 겪었습니다.
 ![ProductBody jsx - frontend-3rd-Cartt-wonseop - Visual Studio Code 2023-12-15 오전 11_30_17](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/7b2f7327-f859-4b2f-a421-5374ed0977b0)
 
 <br/>
 
-## 2. 전체 JSON 파일을 넘겨서 ID 값을 활용했는데, JSON의 다른 값들은 필요가 없었기 때문에 ID만 넘겨주어도 됐었습니다.
+## 2. 전체 JSON 파일을 넘겨서 ID 값을 활용했는데, <br/> JSON의 다른 값들은 필요가 없었기 때문에 ID만 넘겨주어도 됐었습니다.
 ![had to send id](https://github.com/woorifisa-service-dev-2nd/frontend-3rd-Cartt/assets/59588641/6b343a7c-3591-4361-bd81-b004115897bf)
 
 <br/>
 
-## 3. 팀원 모두 깃 사용법이 미흡하여, 협업시 어려움을 겪었다. 서로 의견을 공유하며 push, merge 등 GIT 명령어 사용법에 익숙해질 수 있는 시간이었다.
+## 3. 팀원 모두 깃 사용법이 미흡하여, 협업시 어려움을 겪었습니다. <br/>서로 의견을 공유하며 push, merge 등 <br/> GIT 명령어 사용법에 익숙해질 수 있는 시간이었다.
 
 <br/> <br/>
 
