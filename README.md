@@ -15,6 +15,7 @@
 
 ## 핵심 기능
 <br/>
+![Uploading slide.gif…]()
 
 ### 슬라이드 방식으로 좌, 우 화살표를 클릭해 제품 전환
 ![Uploading slide.gif…]()
