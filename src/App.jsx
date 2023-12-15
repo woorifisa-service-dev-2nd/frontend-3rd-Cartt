@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useReducer } from 'react'
+import { Route, Routes, useNavigate } from "react-router-dom";
+import DefaultLayout from './layouts/DefaultLayout'
+import { data } from '@/constant/data'
+import { ScreenContext, ScreenDispatchContext } from '@/component/context/ScreenContext.jsx'
+import { reducer, reducerForSlider } from '@/component/context/Reducer.jsx'
+import Home from './pages/Home'
+import Cart from './pages/Cart';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    const [viewItem, sliderDispatch] = useReducer(reducerForSlider, data[0]);
+    const [items, dispatch] = useReducer(reducer, data);
+
+    const navigate = useNavigate();
+
+    const goHome = () => {
+        navigate('/');
+    }
+    const goCart = () => {
+        navigate('/cart');
+    }
+
+    return (
+        <>
+
+            <DefaultLayout>
+
+                <ScreenContext.Provider value={[items, viewItem]}>
+                    <ScreenDispatchContext.Provider value={[dispatch, sliderDispatch]}>
+                        <Routes>
+                            <Route path="/" element={<Home onClick={goCart} />} />
+                            <Route path="/cart" element={<Cart onClick={goHome} />} />
+                        </Routes>
+                    </ScreenDispatchContext.Provider>
+                </ScreenContext.Provider>
+
+            </DefaultLayout>
+
+
+        </>
+    )
 }
 
 export default App
