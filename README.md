@@ -16,7 +16,9 @@
 
 
 ## 핵심 기능
+
 <br/>
+
 ## 1. 슬라이드 방식으로 좌, 우 화살표를 클릭해 "제품 전환" 기능
 ![slide](https://github.com/woorifisa-service-dev-2nd/frontend-2nd-feeling/assets/59588641/38629336-c3df-4af1-9b15-88562de47dbb)
 #### 슬라이드 전환 구현 수업에서 배열로된 이미지를 불러오는 것과는 다르게, 컴포넌트로 구성된 객체의 내용들이 변경되도록 구현해보았습니다.
