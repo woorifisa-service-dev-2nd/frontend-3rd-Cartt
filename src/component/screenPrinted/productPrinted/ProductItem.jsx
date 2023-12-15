@@ -7,29 +7,23 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 // import AddIcon from '@mui/icons-material/Add';
 // import RemoveIcon from '@mui/icons-material/Remove';
-
 import { ScreenContext, ScreenDispatchContext } from '@/component/context/ScreenContext.jsx'
-
-
-const ProductItem = () => {
+const ProductItem = ({id,name,price,img}) => {
     const [items, viewItem] = React.useContext(ScreenContext);
     const [dispatch, sliderDispatch] = React.useContext(ScreenDispatchContext);
-
-    const id = viewItem.id
-
+    // const id = viewItem.id
     return (
         <Card sx={{ maxWidth: 1000 }}>
             <CardMedia
-                sx={{ height: 500 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
-                title="green iguana"
+                sx={{ height: 300 }}
+                image={img}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    유기농 곡물빵
+                    {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    국내산 유기농 통밀로 만든 맛좋은 통밀빵입니다!
+                    {price}
                 </Typography>
             </CardContent>
             <CardActions>
@@ -40,5 +34,4 @@ const ProductItem = () => {
         </Card>
     )
 }
-
 export default ProductItem

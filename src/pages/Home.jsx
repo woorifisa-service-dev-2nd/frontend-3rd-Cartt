@@ -3,17 +3,20 @@ import ScreenHeader from '@/component/screenPrinted/ScreenHeader'
 import ScreenBody from '@/component/screenPrinted/ScreenBody'
 import ScreenResult from '@/component/screenPrinted/ScreenResult'
 import Button from '@mui/material/Button';
+import { Box, Grid } from '@mui/material';
 
 const Home = ({ onClick }) => {
 
     return (
-        <div>
+        <Grid >
             <ScreenHeader />
-            <Button variant="contained" color="success" onClick={onClick} >ADD TO CART</Button>
+            
             <ScreenBody />
             <ScreenResult />
-
-        </div>
+            <Box  textAlign='center'>
+            <Button   variant="contained" color="success" onClick={onClick} >GO TO CART</Button>
+            </Box>
+        </Grid>
     )
 }
 
